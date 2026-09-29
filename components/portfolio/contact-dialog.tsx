@@ -139,7 +139,7 @@ function ContactForm({ onDone }: { onDone: () => void }) {
             id="contact-message"
             name="message"
             rows={5}
-            placeholder="Hi Alex, I'd love to chat about..."
+            placeholder="Hi Jordan, I'd love to chat about..."
             value={fields.message}
             onChange={(e) => update("message", e.target.value)}
             required

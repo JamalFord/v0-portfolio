@@ -7,9 +7,9 @@ const _spaceGrotesk = Space_Grotesk({ subsets: ['latin'] })
 const _jetbrainsMono = JetBrains_Mono({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Alex Rivera — Full-Stack & AI Engineer',
+  title: 'Jordan Kim — Full-Stack & AI Engineer',
   description:
-    'Portfolio of Alex Rivera, a full-stack and AI engineer building fast web products, LLM-powered tools, and developer infrastructure.',
+    'Portfolio of Jordan Kim, a full-stack and AI engineer building fast web products, LLM-powered tools, and developer infrastructure.',
   generator: 'v0.app',
   icons: {
     icon: [
