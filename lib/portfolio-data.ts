@@ -1,15 +1,15 @@
 export const profile = {
-  name: 'Alex Rivera',
-  handle: 'alexrivera',
+  name: 'Jordan Kim',
+  handle: 'jordankim',
   title: 'Full-Stack & AI Engineer',
   location: 'San Francisco, CA',
-  email: 'hello@alexrivera.dev',
+  email: 'hello@jordankim.dev',
   tagline:
     'I build fast, reliable web products and ship LLM features that people actually use — from the database schema to the last pixel.',
   socials: {
-    github: 'https://github.com/alexrivera',
-    linkedin: 'https://www.linkedin.com/in/alexrivera',
-    twitter: 'https://x.com/alexrivera',
+    github: 'https://github.com/jordankim',
+    linkedin: 'https://www.linkedin.com/in/jordankim',
+    twitter: 'https://x.com/jordankim',
   },
 }
 
@@ -35,8 +35,8 @@ export const projects: Project[] = [
       'Privacy-first product analytics with real-time funnels, streaming ingestion, and sub-100ms dashboards over 2B+ events.',
     tags: ['Next.js', 'Postgres', 'ClickHouse', 'Tailwind'],
     image: '/projects/lumen.png',
-    demoUrl: 'https://lumen.alexrivera.dev',
-    repoUrl: 'https://github.com/alexrivera/lumen',
+    demoUrl: 'https://lumen.jordankim.dev',
+    repoUrl: 'https://github.com/jordankim/lumen',
   },
   {
     slug: 'docmind',
@@ -46,8 +46,8 @@ export const projects: Project[] = [
       'RAG assistant that answers questions over PDFs and wikis with inline citations, hybrid search, and eval-driven prompts.',
     tags: ['AI SDK', 'pgvector', 'TypeScript', 'RAG'],
     image: '/projects/docmind.png',
-    demoUrl: 'https://docmind.alexrivera.dev',
-    repoUrl: 'https://github.com/alexrivera/docmind',
+    demoUrl: 'https://docmind.jordankim.dev',
+    repoUrl: 'https://github.com/jordankim/docmind',
   },
   {
     slug: 'shipkit',
@@ -57,8 +57,8 @@ export const projects: Project[] = [
       'Zero-config deployment CLI that previews every branch, runs smoke tests, and posts status checks back to pull requests.',
     tags: ['Go', 'Docker', 'GitHub Actions', 'CLI'],
     image: '/projects/shipkit.png',
-    demoUrl: 'https://shipkit.alexrivera.dev',
-    repoUrl: 'https://github.com/alexrivera/shipkit',
+    demoUrl: 'https://shipkit.jordankim.dev',
+    repoUrl: 'https://github.com/jordankim/shipkit',
   },
   {
     slug: 'streetsense',
@@ -68,8 +68,8 @@ export const projects: Project[] = [
       'Browser-based object detection for city footage using ONNX + WebGPU, with a labeling UI for active-learning loops.',
     tags: ['Python', 'ONNX', 'WebGPU', 'React'],
     image: '/projects/vision.png',
-    demoUrl: 'https://streetsense.alexrivera.dev',
-    repoUrl: 'https://github.com/alexrivera/streetsense',
+    demoUrl: 'https://streetsense.jordankim.dev',
+    repoUrl: 'https://github.com/jordankim/streetsense',
   },
 ]
 

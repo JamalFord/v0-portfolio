@@ -96,7 +96,7 @@ export function TerminalWidget() {
         out.push(line('accent', 'opening secure channel…'))
         openContact()
         break
-      case 'sudo hire alex':
+      case 'sudo hire jordan':
         out.push(line('accent', 'permission granted. great choice.'))
         openContact()
         break
@@ -141,7 +141,7 @@ export function TerminalWidget() {
           <span className="size-3 rounded-full bg-muted-foreground/40" />
           <span className="size-3 rounded-full bg-primary/80" />
         </div>
-        <span className="text-xs text-muted-foreground">~/alex — zsh</span>
+        <span className="text-xs text-muted-foreground">~/jordan — zsh</span>
         <span className="text-xs tabular-nums text-muted-foreground">{time}</span>
       </div>
 
