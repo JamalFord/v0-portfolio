@@ -1,7 +1,7 @@
 'use client'
 
-import { useState } from 'react'
-import { Menu, X } from 'lucide-react'
+import { useEffect, useState } from 'react'
+import { Menu, Moon, Sun, X } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { profile } from '@/lib/portfolio-data'
 import { useContact } from './contact-dialog'
@@ -15,7 +15,28 @@ const navItems = [
 
 export function SiteHeader() {
   const [menuOpen, setMenuOpen] = useState(false)
+  const [isDark, setIsDark] = useState(true)
   const { openContact } = useContact()
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)')
+    const applyTheme = (dark: boolean) => {
+      setIsDark(dark)
+      document.documentElement.classList.toggle('dark', dark)
+      document.documentElement.classList.toggle('light', !dark)
+    }
+    applyTheme(mediaQuery.matches)
+    const handleChange = (event: MediaQueryListEvent) => applyTheme(event.matches)
+    mediaQuery.addEventListener('change', handleChange)
+    return () => mediaQuery.removeEventListener('change', handleChange)
+  }, [])
+
+  const toggleTheme = () => {
+    const nextIsDark = !isDark
+    setIsDark(nextIsDark)
+    document.documentElement.classList.toggle('dark', nextIsDark)
+    document.documentElement.classList.toggle('light', !nextIsDark)
+  }
 
   return (
     <header className="fixed inset-x-0 top-0 z-40 px-4 pt-4">
@@ -58,6 +79,15 @@ export function SiteHeader() {
               {item.label}
             </a>
           ))}
+          <Button
+            variant="ghost"
+            size="icon"
+            className="mt-2 md:mt-0"
+            aria-label={isDark ? 'Switch to light theme' : 'Switch to dark theme'}
+            onClick={toggleTheme}
+          >
+            {isDark ? <Sun /> : <Moon />}
+          </Button>
           <Button
             className="mt-2 h-9 px-4 md:mt-0 md:ml-2"
             onClick={() => {
